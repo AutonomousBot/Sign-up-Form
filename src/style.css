@@ -6,14 +6,17 @@
   font-style: normal;
 }
 
-html {
-  width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
 body {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  box-sizing: border-box;
 }
 
 a {
@@ -22,17 +25,18 @@ a {
 
 #container {
   display: flex;
-  gap: 5rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 0rem;
+  font-family: 'Arial' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #banner {
   color: rgb(182, 255, 188);
   background: url("./assets/tree.jpg") no-repeat;
   height: 100vh;
-  width: 50vh;
+  width: 50vw;
   background-size: 100% 100%;
   position: relative;
+  text-align: center;
 }
 
 #logo-title {
@@ -58,13 +62,35 @@ a {
   width: 100%;
 }
 
+p {
+  margin: 0.8rem;
+}
+
 #inspirational-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 35vh;
+  padding: 10px;
   background-color: rgb(231, 220, 220);
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #sign-up-form {
+  height: 35vh;
   border: none;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
+}
+
+label,input{
+  display:flex;
+  flex-direction:column;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
