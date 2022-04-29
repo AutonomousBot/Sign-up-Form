@@ -33,7 +33,7 @@ a {
   color: rgb(182, 255, 188);
   background: url("./assets/tree.jpg") no-repeat;
   height: 100vh;
-  width: 50vw;
+  width: 40vw;
   background-size: 100% 100%;
   position: relative;
   text-align: center;
@@ -43,14 +43,14 @@ a {
   background: rgba(0, 0, 0, 0.5);
   font-family: 'MyFont', 'Brush Script MT (cursive)';
   position: absolute;
-  top: 10rem;
-  font-size: 7rem;
+  top: 9rem;
+  font-size: 5rem;
   width: 100%;
 }
 
 #logo {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 
@@ -69,20 +69,24 @@ a {
   height: 35vh;
   padding: 10px;
   background-color: rgba(207, 207, 207, 0.185);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
-
+  
 #sign-up-form {
-  height: 35vh;
   border: none;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.322);
 }
 
 label,input{
   display:flex;
   flex-direction:column;
+  font-size: 0.8rem;
+  border-radius: 2px;
+}
+
+#sign-up-form span {
+  font-size: 1.3rem;
 }
 
 ul {
@@ -94,4 +98,12 @@ ul {
 
 #inspirational-quote, #sign-up-form {
   padding-left: 3rem;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+#pass1:invalid {
+  
 }
